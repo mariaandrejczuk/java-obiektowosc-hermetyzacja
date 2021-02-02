@@ -13,6 +13,7 @@ public class CarServiceApp {
             System.out.println("1 - add employee");
             System.out.println("2 - display employee");
             System.out.println("3 - add task");
+            System.out.println("4 - display tasks");
             System.out.println("100 - stop");
 
             option = scanner.nextInt();
@@ -45,6 +46,9 @@ public class CarServiceApp {
                     } else {
                         System.out.println("Not found.");
                     }
+                    break;
+                case 4:
+                    carService.displayTasks();
                     break;
             }
         } while (option != 100);
